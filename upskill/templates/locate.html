@@ -1,0 +1,34 @@
+{% extends "profile_base.html" %}
+{% load static %}
+
+
+
+{% block subtitle %} College Locator {% endblock subtitle %}
+
+
+{% block content %}
+
+<h2 class= "text-center my-4">Choose the best college to study your dream:</h2>
+<hr>
+
+<form class = "mx-4" method="post" action="">
+    {% csrf_token %}
+    <div class="form-group mx-4 mb-3">
+      <label class = "my-2" for="state">Enter your Home State !!</label>
+      <input type="text" name = "state" class="form-control sm" id="state" aria-describedby="emailHelp" placeholder="Enter State">
+      <small id="emailHelp" class="form-text text-muted ">We'll never share your information with anyone else.</small>
+    </div>
+    <button id="submit" type = "submit" class="btn btn-primary mx-4">Submit</button>
+  </form>
+
+  <div id= "mine" class= "mx-2">
+  </div>
+
+
+<script src="{% static 'js/locate.js' %}">
+</script>
+
+
+
+
+{% endblock content %}

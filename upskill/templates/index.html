@@ -1,0 +1,297 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UpSkill</title>
+    <style>
+      
+
+* {
+  margin: 0px;
+  font-family: "Prosto One", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    padding: 8px 22px 8px 22px;
+    position: fixed;
+    z-index: 4;
+}
+
+/* .btn-secondary{
+    --bs-btn-bg: #f6f6f6;
+    color: #687a83;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-hover-bg: #f6f6f6;
+    --bs-btn-color:#f6f6f6;
+    --bs-btn-active-bg: #f6f6f6;
+    --bs-btn-active-border-color: #51585e;
+    --bs-btn-activecolor: 
+} */
+
+.navbar-brand{
+    font-weight:bolder;
+}
+
+.form-inline{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 813px;
+}
+
+.log-in{
+   margin-left: 11px;
+}
+
+.Introduction {
+  height: 760px;
+  background-image: url("{% static 'images/home-image.webp' %}");
+}
+
+.tagline{
+    position: relative;
+    z-index: 3;
+    width: 250px;
+    top: 200px;
+    left: 1160px;
+}
+
+.quote{
+    color: rgb(96, 102, 109);
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+
+/*What is blockchain*/
+
+.container{
+    color: rgb(97, 97, 97);
+    margin: 10px auto 10px auto;
+    /* border: 2px solid grey; */
+    background-color: rgba(188, 185, 202, 0.37);
+    border-radius: 8px;
+    width: 1040px;
+    padding: 80px;
+}
+
+#container-1 h1{
+    margin-bottom: 29px;
+}
+#container-1 p{
+    font-size: larger;
+}
+
+/*Types of blockchain*/
+
+#container-2{
+    background-image: url("{% static 'css/images/this.jpg'  %}");
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+#container-2 h1,h4{
+    font-weight: bold;
+    margin-bottom: 29px;
+
+}
+
+.blockchain-types{
+    display: flex;
+}
+
+.box{
+    border: 2px solid grey;
+    border-radius: 8px;
+    margin: auto 5px auto 5px;
+    height: 510px;
+    padding: 10px;
+}
+
+/*Demo*/
+
+.demo{
+    height: 650px;
+    background-image: url("{% static './images/demo2.gif' %}");
+    opacity: 0.85;
+    padding: 50px;
+    color: rgb(210, 211, 216);
+    font-weight:bolder;
+    text-align: center;
+}
+
+
+
+footer{
+    margin: 8px auto 8px auto;
+    text-align: center;
+    word-spacing: 20px;
+}
+
+footer i{
+    cursor: pointer;
+}
+
+footer p{
+    word-spacing: 0px;
+}
+    </style>
+  
+
+    <!-- Font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Style Sheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/9c8e145fe3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="Introduction">
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="#">JarviX</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="profile/">Profile</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenu2"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Jump to
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">
+                    Another action
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    Something else here
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="log-in">
+      
+              <a class="btn btn-primary" href="http://localhost:8000/login" role="button"> Login</a>
+        
+          </div>
+        </div>
+      </nav>
+    
+
+    <div class="container" id="container-1" bg-primary>
+      <h1>What is UpSkill?</h1>
+      <p class="description">
+        We help to choose your career according to trending technologies which you can see in our top blog section. 
+        We help to locate the best collge that fits your passion and also provides necessary skills to achieve your dream.
+        You can also ask your queries from our chatbot that is open 24x7  that gives wonderful answers to your questions.
+        Also post what you feel good about you or technology and give people insights about that particular technology.
+      </p>
+    </div>
+
+    <div class="container" id="container-2">
+      <h1>What we offer !!!</h1>
+      <div class="blockchain-types">
+        <div class="box" id="box-1">
+          <h4>Public blockchain networks</h4>
+          <p>
+            A blockchain is a distributed database that is used to maintain a continuously growing list of records, called blocks. Each block contains a timestamp and a link to a previous block.
+        </div>
+        <div class="box" id="box-2">
+          <h4>Artificial Intelligence</h4>
+          <p>
+            Artificial intelligence (AI) is the ability of a computer or machine to perform tasks that would normally require human intelligence, such as learning, problem solving, decision making, and language comprehension.
+          </p>
+        </div>
+        <div class="box" id="box-3">
+          <h4>Cloud Computing</h4>
+          <p>
+            Cloud computing refers to the delivery of computing services, such as storage, processing, networking, software, analytics and intelligence, over the internet (the cloud). These services are provided on demand, often on a pay-per-use basis..
+          </p>
+        </div>
+        <div class="box" id="box-4">
+          <h4>Quantum Computing</h4>
+          <p>
+            Quantum computing is an area of computer science that uses the principles of quantum theory. Quantum theory explains the behavior of energy and material on the atomic and subatomic levels.
+
+Quantum computing uses subatomic particles, such as electrons or photons. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo" background-image = "{% static './images/demo2.gif' %}">
+      <h1 class="heading1">One good analogy is worth three hour discussion..</h1>
+      <h1 class="heading2">Try our easy to understand animations for better understanding of blockchain..</h1>
+    </div>
+
+    <footer class = "white-section" id="footer">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-solid fa-envelope"></i>
+      <p>© Copyright 2023 JarviX</p>
+    </footer>
+    <script src="{% static 'js/index.js' %}"></script>
+  </body>
+</html>

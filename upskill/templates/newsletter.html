@@ -1,0 +1,23 @@
+
+{% extends "profile_base.html" %}
+
+
+{% block subtitle %} Newsletter {% endblock subtitle %}
+
+
+{% block content %}
+
+<h2 class= "text-center my-4">Signup For Our Daily Newsletter</h2>
+<hr>
+
+<form class = "mx-4" method="post" action="">
+    {% csrf_token %}
+    <div class="form-group mx-4 mb-3">
+      <label class = "my-2" for="email">Enter your Email to get a daily email about tech world!!</label>
+      <input type="email" name = "email" class="form-control sm" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+      <small id="emailHelp" class="form-text text-muted ">We'll never share your email with anyone else.</small>
+    </div>
+    <button type="submit" class="btn btn-primary mx-4">Submit</button>
+  </form>
+
+{% endblock content %}

@@ -1,0 +1,32 @@
+{% extends "profile_base.html" %} 
+{% block subtitle %} Your Dashboard {% endblock subtitle %}
+
+
+
+{% block content %}
+
+<h2 class ="my-4 text-center"> Your Username : {{request.user}} </h2>
+<hr>
+<h2 class ="text-center"> Your Email : {{request.user.email}} </h2>
+<hr>
+<h2 class ="text-center"> Date and Time : {{request.user.date_joined}} </h2>
+<hr>
+<!-- 
+<ol class = "text-center my-4">
+<h3 class="text-center my-4 ">1. We help to choose your career according to trending technologies which you can see in our top blog section. </h3>
+</ol> -->
+
+<div class="d-flex flex-column flex-container my-4 h-75" id="flexbox">
+    <div class="p-2 bg-primary text-white flex-item">1. We help to choose your career according to trending technologies which you can see in our top blog section.</div>
+<div class="p-2 bg-secondary text-white flex-item">2. We help to locate the best collge that fits your passion and also provides necessary skills to achieve your dream .</div>
+<div class="p-2 bg-success text-white flex-item">3. You can also ask your queries from our chatbot that is open 24x7  that gives wonderful answers to your questions.</div>
+<div class="p-2 bg-danger text-white flex-item">4. Also post what you feel good about you or technology and give people insights about that particular technology.</div>
+<div class="p-2 bg-warning text-dark flex-item">5. Sign up for our daily newsletter that mails you all recent updates about top trending blogs and about your college.</div>
+
+
+
+</div>
+
+
+
+{% endblock content %}

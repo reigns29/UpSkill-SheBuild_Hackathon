@@ -1,0 +1,23 @@
+{% extends "blog_base.html" %}
+
+
+
+{% block blog_content %}    
+
+<h1 class = "mb-4">Blog Posts</h1>
+<hr>
+
+{% for post in posts %}
+<h2> {{ post.title }} </h2>
+<p> {{ post.content }} </p>
+
+<a class="btn btn-primary" href="http://localhost:8000/blog/{{post.id}}" role="button">Go</a>
+
+
+<a class="btn btn-success mx-2" href="http://localhost:8000/blog/{{post.id}}" role="button"> Upvote </a>
+<hr>
+
+{% endfor %} 
+
+
+{% endblock blog_content %}

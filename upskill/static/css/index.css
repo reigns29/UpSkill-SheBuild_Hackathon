@@ -1,0 +1,132 @@
+
+
+* {
+  margin: 0px;
+  font-family: "Prosto One", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    padding: 8px 22px 8px 22px;
+    position: fixed;
+    z-index: 4;
+}
+
+/* .btn-secondary{
+    --bs-btn-bg: #f6f6f6;
+    color: #687a83;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-hover-bg: #f6f6f6;
+    --bs-btn-color:#f6f6f6;
+    --bs-btn-active-bg: #f6f6f6;
+    --bs-btn-active-border-color: #51585e;
+    --bs-btn-activecolor: 
+} */
+
+.navbar-brand{
+    font-weight:bolder;
+}
+
+.form-inline{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 813px;
+}
+
+.log-in{
+   margin-left: 11px;
+}
+
+.Introduction {
+  height: 760px;
+  background-image: url("{% static 'images/bitcoin-background.webp' %}");
+}
+
+.tagline{
+    position: relative;
+    z-index: 3;
+    width: 250px;
+    top: 200px;
+    left: 1160px;
+}
+
+.quote{
+    color: rgb(96, 102, 109);
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+
+/*What is blockchain*/
+
+.container{
+    color: rgb(97, 97, 97);
+    margin: 10px auto 10px auto;
+    /* border: 2px solid grey; */
+    background-color: rgba(188, 185, 202, 0.37);
+    border-radius: 8px;
+    width: 1040px;
+    padding: 80px;
+}
+
+#container-1 h1{
+    margin-bottom: 29px;
+}
+#container-1 p{
+    font-size: larger;
+}
+
+/*Types of blockchain*/
+
+#container-2{
+    background-image: url('images/bitcoin-background.webp');
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+#container-2 h1,h4{
+    font-weight: bold;
+    margin-bottom: 29px;
+
+}
+
+.blockchain-types{
+    display: flex;
+}
+
+.box{
+    border: 2px solid grey;
+    border-radius: 8px;
+    margin: auto 5px auto 5px;
+    height: 510px;
+    padding: 10px;
+}
+
+/*Demo*/
+
+.demo{
+    height: 650px;
+    background-image: url('images/demo2.gif');
+    opacity: 0.85;
+    padding: 50px;
+    color: rgb(210, 211, 216);
+    font-weight:bolder;
+    text-align: center;
+}
+
+
+
+footer{
+    margin: 8px auto 8px auto;
+    text-align: center;
+    word-spacing: 20px;
+}
+
+footer i{
+    cursor: pointer;
+}
+
+footer p{
+    word-spacing: 0px;
+}

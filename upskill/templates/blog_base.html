@@ -1,0 +1,22 @@
+{% extends "profile_base.html" %}
+
+{% block subtitle %}
+
+<a class="btn btn-primary" href="http://localhost:8000/blog/" role="button"> Your Feed </a>
+
+
+<a class="btn btn-primary" href="http://localhost:8000/blog/top" role="button"> Top Feeds </a>
+
+<a class="btn btn-success mx-4" href="http://localhost:8000/blog/new" role="button"> Post New Blog </a>
+
+{% endblock subtitle %}
+
+
+
+
+
+{% block content %}    
+
+{% block blog_content %}       {% endblock blog_content %}
+
+{% endblock content %}
